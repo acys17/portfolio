@@ -437,7 +437,12 @@ body {
 // Desktop/laptop view
 @media only screen and (min-width: 1024px) {
 body { 
+    width: 100vw;
+    overflow-x: hidden;
+
     #home {
+        width: 100vw;
+        
         .navbar {
             ul {
                 font-size: 1.2rem;
