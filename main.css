@@ -1,0 +1,593 @@
+@keyframes growanimation {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif, Arial, Helvetica;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: inline;
+  width: 100vw;
+  margin: 0;
+}
+body #home {
+  height: 100vh;
+  width: inherit;
+  background: url("./img/stars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body #home .navbar {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+}
+body #home .navbar ul {
+  background-color: rgba(17, 17, 17, 0.571);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+  padding-right: 2%;
+}
+body #home .navbar ul a {
+  color: rgba(245, 245, 245, 0.6);
+  padding-left: 4%;
+  list-style: none;
+  text-decoration: none;
+  transition: ease 0.6s;
+}
+body #home .navbar ul a:hover {
+  color: whitesmoke;
+  cursor: pointer;
+}
+body #home .intro {
+  color: rgba(245, 245, 245, 0.6);
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5vw;
+}
+body #home .intro h1 {
+  font-size: 3.5rem;
+  padding-bottom: 5%;
+  line-height: 1.2;
+  color: whitesmoke;
+}
+body #home .intro .title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+body #home .intro .buttons {
+  display: flex;
+  margin-top: 6vh;
+}
+body #home .intro .buttons .line {
+  width: 4vw;
+  height: 0.2vh;
+  background-color: white;
+  color: white;
+  align-self: center;
+  position: relative;
+  left: -12px;
+}
+body #home .intro .buttons .button {
+  color: rgba(245, 245, 245, 0.6);
+  text-decoration: none;
+  border: 2px solid rgba(245, 245, 245, 0.6);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 1vw;
+}
+body #about {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  background-color: rgba(199, 199, 199, 0.01);
+  overflow-x: hidden;
+}
+body #about .card-container {
+  display: flex;
+  width: 200vw;
+  margin: 5vh 0;
+}
+body #about .card-container .card {
+  height: 90vh;
+  width: 90vw;
+  position: relative;
+  box-shadow: 2px 2px 10px #d8d8d8;
+  background-color: white;
+  line-height: 1.8;
+  padding: 5%;
+  font-size: 0.9rem;
+  transition: ease 0.8s;
+}
+body #about .card-container .card .headings {
+  padding-bottom: 4vh;
+  width: 100%;
+  font-size: 0.9rem;
+}
+body #about .card-container .card .text p a {
+  color: coral;
+  text-decoration: none;
+}
+body #about .card-container .card .text ul {
+  list-style: none;
+}
+body #about .card-container .card .arrow {
+  position: relative;
+}
+body #about .card-container .first-card {
+  left: 5vw;
+}
+body #about .card-container .first-card .right-arrow {
+  top: 20vh;
+  left: 55vw;
+}
+body #about .card-container .second-card {
+  right: -500px;
+}
+body #about .card-container .second-card .left-arrow {
+  top: 5vh;
+}
+body #projects {
+  width: inherit;
+}
+body #projects p {
+  font-size: 0.89em;
+}
+body #projects .project-container {
+  width: 100vw;
+  margin: 5vh auto;
+}
+body #projects .project-container .project {
+  width: 95vw;
+  height: 95vh;
+  background-color: rgba(199, 199, 199, 0.01);
+  margin: 2vh auto;
+  position: relative;
+}
+body #projects .project-container .project img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  size: cover;
+  border-radius: 20px;
+}
+body #projects .project-container .project .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 10vw;
+  background: rgba(17, 17, 17, 0.6);
+  color: whitesmoke;
+  opacity: 0;
+  transition: opacity 0.8s;
+  z-index: 1;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5rem;
+}
+body #projects .project-container .project .image-overlay .close-button {
+  position: inherit;
+  top: 2vh;
+  right: 5vw;
+  font-size: 2rem;
+}
+body #projects .project-container .project .image-overlay .image-title {
+  padding-bottom: 5vh;
+}
+body #projects .project-container .project .image-overlay .tools {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 7vh 0;
+}
+body #projects .project-container .project .image-overlay .image-links {
+  width: 100%;
+  text-align: center;
+}
+body #projects .project-container .project .image-overlay .image-links a {
+  color: whitesmoke;
+  width: 100%;
+  padding: 8%;
+}
+body #contact {
+  height: 100%;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+}
+body #contact .contact-links {
+  height: 80vh;
+  width: 100%;
+  padding: 20% 10%;
+  line-height: 2;
+}
+body #contact .contact-links .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body #contact .contact-links .social-media a {
+  padding: 8%;
+  color: #111111;
+  font-size: 1.3rem;
+}
+body #contact form {
+  background-color: rgba(199, 199, 199, 0.342);
+  box-shadow: 2px 2px 10px #d8d8d8;
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 10% 0;
+}
+body #contact form input, body #contact form textarea {
+  background-color: transparent;
+  margin: 15px 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 3px;
+}
+body #contact form input::placeholder, body #contact form textarea::placeholder {
+  padding: 8px;
+  color: rgba(17, 17, 17, 0.6);
+}
+body #contact form textarea {
+  height: 200px;
+  line-height: 20px;
+}
+body #contact form .button {
+  background-color: rgba(17, 17, 17, 0.6);
+  color: whitesmoke;
+  width: 50%;
+  height: 40px;
+  margin: 10% auto;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+}
+body footer .to-top-button svg {
+  position: absolute;
+  font-size: 1.5rem;
+  cursor: pointer;
+  height: 20%;
+  border-bottom: 2px solid transparent;
+  border-radius: 50px;
+  color: #111111;
+  transition: ease 0.6s;
+}
+body footer .to-top-button svg:hover {
+  transform: rotate(360deg);
+}
+body footer .horizontal-line {
+  display: inline-block;
+  width: 90vw;
+  height: 2px;
+  background-color: #141414;
+  position: relative;
+  bottom: 10px;
+}
+body footer p {
+  align-self: flex-start;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 100vw;
+  }
+  body #about {
+    overflow: hidden;
+  }
+  body #about .card {
+    transition: ease 0.8s;
+  }
+  body #about .card .text {
+    font-size: 1.2rem;
+  }
+  body #about .card .arrow {
+    font-size: 1.2rem;
+  }
+  body #about .first-card {
+    position: relative;
+    left: 300px;
+  }
+  body #about .second-card {
+    position: relative;
+    right: -400px;
+  }
+  body #about .second-card ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  body #about .second-card ul li {
+    padding: 1vw;
+  }
+  body #projects {
+    background: url("./img/torn.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180vh;
+    padding: 20vh 2vw 0vh 2vw;
+  }
+  body #projects .project-container {
+    width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0vw;
+    margin: 2vw auto;
+  }
+  body #projects .project-container .project {
+    height: 55vh;
+    width: 29vw;
+  }
+  body #projects .project-container .project image {
+    max-height: 50vh;
+  }
+  body #projects .project-container .project .image-overlay {
+    padding: 1vw;
+  }
+  body #contact {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+  }
+  body #contact form {
+    margin: 2vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body #home .navbar ul {
+    font-size: 1.2rem;
+  }
+  body #home .intro h1 {
+    font-size: 5rem;
+  }
+  body #home .intro .title {
+    font-size: 1.8rem;
+  }
+  body #home .intro .buttons .line {
+    width: 30px;
+    left: -25px;
+  }
+  body #home .intro .buttons .button {
+    width: 130px;
+    text-align: center;
+  }
+  body #home .intro .buttons .button:hover {
+    color: #111111;
+    cursor: pointer;
+    background-color: whitesmoke;
+    transition: ease 0.8s;
+    transform: scale(1.2);
+  }
+  body #about {
+    overflow: hidden;
+    width: inherit;
+  }
+  body #about .card-container .card {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw;
+    padding: 10vw;
+  }
+  body #about .card-container .card .text {
+    font-size: 1rem;
+  }
+  body #about .card-container .card svg {
+    font-size: 1.3rem;
+  }
+  body #about .card-container .card .arrow {
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  body #about .card-container .first-card {
+    position: relative;
+    left: 10vw;
+  }
+  body #about .card-container .first-card .right-arrow {
+    position: relative;
+    top: 30vh;
+  }
+  body #about .card-container .second-card {
+    position: relative;
+    right: -90vw;
+  }
+  body #about .card-container .second-card .left-arrow {
+    position: relative;
+    right: 0px;
+    top: 30vh;
+  }
+  body #projects {
+    height: 300vh;
+    padding: 40vh 2vw;
+    width: 100vw;
+    background-position: unset;
+  }
+  body #projects h2 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    font-size: 3rem;
+    padding-bottom: 5vh;
+  }
+  body #projects p {
+    padding-bottom: 10vh;
+    font-size: 1.2rem;
+  }
+  body #projects .project-container {
+    height: 120vh;
+    width: 100vw;
+    margin: 2% auto;
+    display: grid;
+    grid-template-columns: repeat(3, 26vw);
+    grid-template-rows: repeat(3, 55vh);
+    gap: 1vw;
+  }
+  body #projects .project-container .project {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    opacity: 0.85;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px black;
+    margin: 0 8vw;
+  }
+  body #projects .project-container .project:hover {
+    opacity: 1;
+  }
+  body #projects .project-container .project img {
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  body #projects .project-container .project .image-overlay {
+    border-radius: 10px;
+    padding: 0 2vw;
+    width: 100%;
+    height: 100%;
+  }
+  body #projects .project-container .project .image-overlay .close-button {
+    right: 5px;
+    top: 5px;
+    font-size: 1.3rem;
+  }
+  body #projects .project-container .project .image-overlay .image-title {
+    padding-bottom: 5vh;
+  }
+  body #projects .project-container .project .image-overlay .tools {
+    padding: 2vh 0;
+  }
+  body #projects .project-container .one {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  body #projects .project-container .two {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  body #projects .project-container .three {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  body #projects .project-container .four {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  body #projects .project-container .five {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  body #projects .project-container .six {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  body #contact {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  body #contact .contact-links {
+    width: 50%;
+    height: 100vh;
+    align-self: center;
+    margin: 0 auto;
+  }
+  body #contact .contact-links p {
+    font-size: 1rem;
+  }
+  body #contact .contact-links div {
+    width: 12vw;
+    font-size: 2rem;
+  }
+  body #contact .contact-links div svg {
+    transition: 0.6s ease;
+  }
+  body #contact .contact-links div .fa-github:hover {
+    color: black;
+    background-color: white;
+    font-size: 3rem;
+  }
+  body #contact .contact-links div .fa-linkedin-in:hover {
+    color: #007bb5;
+    background-color: white;
+    font-size: 3rem;
+  }
+  body #contact .contact-links div .fa-envelope:hover {
+    color: grey;
+    background-color: white;
+    font-size: 3rem;
+  }
+  body #contact form {
+    width: 35%;
+    align-self: center;
+    margin: 0 auto;
+    height: 85%;
+    padding: 10vh 1vw;
+  }
+  body #contact form textarea {
+    min-height: 20vh;
+  }
+  body #contact form input::placeholder, body #contact form textarea::placeholder {
+    font-size: 16px;
+  }
+  body #contact form .button {
+    width: 35%;
+    height: 25px;
+  }
+  body footer .horizontal-line {
+    width: 70vw;
+  }
+  body footer p {
+    font-size: 16px;
+    margin-left: 220px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
