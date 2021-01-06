@@ -237,7 +237,7 @@ body #projects .project-container {
 
 body #projects .project-container .project {
   width: 95vw;
-  height: 95vh;
+  height: 55vh;
   background-color: rgba(199, 199, 199, 0.01);
   margin: 2vh auto;
   position: relative;
