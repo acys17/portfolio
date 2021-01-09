@@ -41,6 +41,7 @@
           box-sizing: border-box;
   font-family: "Raleway", sans-serif, Arial, Helvetica;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -82,7 +83,7 @@ body #home .navbar ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-right: 2%;
 }
 
@@ -158,10 +159,9 @@ body #home .intro .buttons .button {
 
 body #about {
   height: 100vh;
-  width: 100vw;
+  width: inherit;
   display: block;
   background-color: rgba(199, 199, 199, 0.01);
-  overflow-x: hidden;
 }
 
 body #about .card-container {
@@ -169,7 +169,7 @@ body #about .card-container {
   display: -ms-flexbox;
   display: flex;
   width: 200vw;
-  margin: 5vh 0;
+  padding: 5vh 0;
 }
 
 body #about .card-container .card {
@@ -188,7 +188,6 @@ body #about .card-container .card {
 
 body #about .card-container .card .headings {
   padding-bottom: 4vh;
-  width: 100%;
   font-size: 0.9rem;
 }
 
@@ -220,10 +219,12 @@ body #about .card-container .second-card {
 
 body #about .card-container .second-card .left-arrow {
   top: 5vh;
+  width: 20vw;
 }
 
 body #projects {
   width: inherit;
+  overflow-x: visible;
 }
 
 body #projects p {
@@ -231,7 +232,7 @@ body #projects p {
 }
 
 body #projects .project-container {
-  width: 100vw;
+  width: inherit;
   margin: 5vh auto;
 }
 
@@ -325,7 +326,6 @@ body #contact {
 }
 
 body #contact .contact-links {
-  height: 80vh;
   width: 100%;
   padding: 20% 10%;
   line-height: 2;
@@ -464,6 +464,9 @@ body footer p {
   body {
     width: 100vw;
   }
+  body #home .navbar ul {
+    font-size: 1.3rem;
+  }
   body #about {
     overflow: hidden;
   }
@@ -517,6 +520,7 @@ body footer p {
         grid-template-rows: repeat(2, 1fr);
     gap: 0vw;
     margin: 2vw auto;
+    overflow-x: visible;
   }
   body #projects .project-container .project {
     height: 55vh;
@@ -753,7 +757,6 @@ body footer p {
   }
   body #contact .contact-links {
     width: 50%;
-    height: 100vh;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;

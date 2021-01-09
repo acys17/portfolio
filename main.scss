@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: $primaryfont;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -34,7 +35,7 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-end;
-                font-size: 0.9rem;
+                font-size: 1rem;
                 padding-right: 2%;
 
                 a {
@@ -100,15 +101,14 @@ body {
 
     #about {
         height: 100vh;
-        width: 100vw;
+        width: inherit;
         display: block;
         background-color: $colour-tertiary-transparent;
-        overflow-x: hidden;
 
         .card-container {
             display: flex;
             width: 200vw;
-            margin: 5vh 0;
+            padding: 5vh 0;
 
             .card {
                 height: 90vh;
@@ -123,7 +123,7 @@ body {
 
                 .headings {
                     padding-bottom: 4vh;
-                    width: 100%;
+                    // width: 100%;
                     font-size: 0.9rem;
                 }
 
@@ -159,6 +159,7 @@ body {
 
                 .left-arrow {
                     top: 5vh;
+                    width: 20vw;
                 }
             }
         }
@@ -166,13 +167,14 @@ body {
     
     #projects {
         width: inherit;
+        overflow-x: visible;
 
         p {
             font-size: 0.89em;
         }
 
         .project-container {
-            width: 100vw;
+            width: inherit;
             margin: 5vh auto;
 
             .project {
@@ -251,7 +253,7 @@ body {
         margin: 10px auto;
 
         .contact-links {
-            height: 80vh;
+            // height: 80vh;
             width: 100%;
             padding: 20% 10%;
             line-height: 2;
@@ -353,6 +355,14 @@ body {
     body {   
         width: 100vw;
 
+        #home {
+            .navbar {
+                ul {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
         #about {
             overflow: hidden;
             
@@ -405,6 +415,7 @@ body {
                 grid-template-rows: repeat(2, 1fr);
                 gap: 0vw;
                 margin: 2vw auto;
+                overflow-x: visible;
 
                 .project {
                     height: 55vh;
@@ -640,7 +651,6 @@ body {
     
         .contact-links {
             width: 50%;
-            height: 100vh;
             align-self: center;
             margin: 0 auto;
 
