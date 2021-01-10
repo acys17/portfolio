@@ -30,7 +30,7 @@ const projects = [
         id: "four",
         image: "./img/hangman.png",
         title: "Hangman",
-        description: "A JavaScript 2-player game of Hangman",
+        description: "A single-player game of Hangman using vanilla JavaScript",
         tools: "Javascript, CSS3(SASS), HTML5",
         webpage: "http://hangman.alice-scott.co.uk/",
         github: "https://github.com/acys17/hangman"
