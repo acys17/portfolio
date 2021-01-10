@@ -28,12 +28,12 @@ const projects = [
     },
     {   
         id: "four",
-        image: "./img/coming-soon.png",
+        image: "./img/hangman.png",
         title: "Hangman",
         description: "A JavaScript 2-player game of Hangman",
         tools: "Javascript, CSS3(SASS), HTML5",
-        webpage: "",
-        github: ""
+        webpage: "http://hangman.alice-scott.co.uk/",
+        github: "https://github.com/acys17/hangman"
     },
     {
         id: "five",
