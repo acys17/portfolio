@@ -10,21 +10,21 @@ const projects = [
     },
     {
         id: "two",
-        image: "./img/morse-code.png",
-        title: "Morse Code Translator",
-        description: "A JavaScript App that translates English to Morse Code and vice versa.",
-        tools: "JavaScript, HTML5, CSS3(SASS)",
-        webpage: "https://acys17.github.io/Morse-Code-Translator/",
-        github: "https://github.com/acys17/Morse-Code-Translator"
-    },
-    {
-        id: "three",
         image: "./img/dots-and-boxes.png",
         title: "Dots and Boxes",
         description: "A JavaScript 2-player game based on the game Dots and Boxes",
         tools: "Javascript, CSS3(SASS), HTML5",
         webpage: "https://acys17.github.io/dots-and-boxes/",
         github: "https://github.com/acys17/dots-and-boxes"
+    },
+    {
+        id: "three",
+        image: "./img/beer.jpg",
+        title: "Punk API",
+        description: "A React App that allows the user to filter through information from a Brewdog beer API",
+        tools: "ReactJS, REST APIs, Postman, CSS3(SASS), HTML5",
+        webpage: "https://punk-api-ba43a.web.app/",
+        github: "https://github.com/acys17/punk-api"
     },
     {   
         id: "four",
@@ -37,6 +37,15 @@ const projects = [
     },
     {
         id: "five",
+        image: "./img/morse-code.png",
+        title: "Morse Code Translator",
+        description: "A JavaScript App that translates English to Morse Code and vice versa.",
+        tools: "JavaScript, HTML5, CSS3(SASS)",
+        webpage: "https://acys17.github.io/Morse-Code-Translator/",
+        github: "https://github.com/acys17/Morse-Code-Translator"
+    },
+    {
+        id: "six",
         image: "./img/coming-soon.png",
         title: "Hostile Aliens",
         description: "A JavaScript single-player game - destroy all hostile alien ships!",
@@ -45,13 +54,31 @@ const projects = [
         github: ""
     },
     {
-        id: "six",
-        image: "./img/beer.jpg",
-        title: "Punk API",
-        description: "A React App that allows the user to filter through information from a Brewdog beer API",
-        tools: "ReactJS, REST APIs, Postman, CSS3(SASS), HTML5",
-        webpage: "https://punk-api-ba43a.web.app/",
-        github: "https://github.com/acys17/punk-api"
+        id: "seven",
+        image: "./img/coming-soon.png",
+        title: "",
+        description: "",
+        tools: "",
+        webpage: "",
+        github: ""
+    },
+    {
+        id: "eight",
+        image: "./img/coming-soon.png",
+        title: "",
+        description: "",
+        tools: "",
+        webpage: "",
+        github: ""
+    },
+    {
+        id: "nine",
+        image: "./img/coming-soon.png",
+        title: "",
+        description: "",
+        tools: "",
+        webpage: "",
+        github: ""
     },
 ];
 

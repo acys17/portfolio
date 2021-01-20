@@ -46,7 +46,7 @@ body {
                     transition: ease 0.6s;
 
                     &:hover {
-                        color: $colour-primary;
+                        color: coral;
                         cursor: pointer;
                     }
                 }
@@ -92,7 +92,7 @@ body {
                         text-decoration: none;
                         border: 2px solid $colour-primary-transparent;
                         padding: 10px 15px;
-                        border-radius: 5px;
+                        border-radius: $border-radius;
                         margin-right: 1vw;
                     }
                 }
@@ -123,7 +123,6 @@ body {
 
                 .headings {
                     padding-bottom: 4vh;
-                    // width: 100%;
                     font-size: 0.9rem;
                 }
 
@@ -209,7 +208,7 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     text-align: center;
-                    line-height: 1.5rem;
+                    line-height: 1rem;
 
                     .close-button {
                         position: inherit;
@@ -485,6 +484,7 @@ body {
                     background-color: $colour-primary;
                     transition: ease 0.8s;
                     transform: scale(1.2);
+                    border-radius: $border-radius;
                 }
             }
         }
@@ -543,7 +543,7 @@ body {
     #projects {
         height: 300vh;
         padding: 40vh 2vw;
-        width: 100vw;
+        width: inherit;
         background-position: unset;
 
         h2 {
@@ -559,18 +559,14 @@ body {
         }
 
         .project-container {
-            max-height: 100vh;
-            width: 100vw;
-            margin: 2% auto;
+            width: inherit;
             display: grid;
-            grid-template-columns: repeat(3, 26vw);
-            grid-template-rows: repeat(3, 55vh);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             gap: 1vw;
 
             .project {
                 background-color: grey;
-                height: 100%;
-                width: 100%;
                 display: flex;
                 opacity: 0.85;
                 transition: .6s ease;
@@ -578,7 +574,6 @@ body {
                 position: relative;
                 cursor: pointer;
                 box-shadow: 2px 2px 10px black;
-                margin: 0 8vw;
 
                 &:hover {
                     opacity: 1;
@@ -593,8 +588,6 @@ body {
                 .image-overlay {
                     border-radius: $border-radius * 2;
                     padding: 0 2vw;
-                    width: 100%;
-                    height: 100%;
 
                     .close-button {
                         right: 5px;
@@ -610,36 +603,6 @@ body {
                         padding: 2vh 0;
                     }
                 }
-            }
-
-            .one {
-                grid-column: 1 / 2;
-                grid-row: 1 / 3;
-            }
-
-            .two {
-                grid-column: 2 / 3;
-                grid-row: 1 / 2;
-            }
-
-            .three {
-                grid-column: 3 / 4;
-                grid-row: 1 / 2;
-            }
-            
-            .four {
-                grid-column: 2 / 3;
-                grid-row: 2 / 3;
-            }
-            
-            .five {
-                grid-column: 1 / 3;
-                grid-row: 3 / 4;
-            }
-            
-            .six {
-                grid-column: 3 / 4;
-                grid-row: 2 / 4;
             }
         }
     }
@@ -703,6 +666,14 @@ body {
             .button {
                 width: 35%;
                 height: 25px;
+                cursor: pointer;
+
+                &:hover {
+                    transition: ease 0.8s;
+                    color: $colour-secondary-transparent;
+                    background-color: $colour-primary;
+                    border: 2px solid $colour-secondary-transparent;
+                }
             }
         }
     }
