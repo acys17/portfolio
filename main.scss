@@ -11,6 +11,7 @@
 }
 
 body {
+    overflow-x: hidden;
     width: 100vw;
     margin: 0;
     
@@ -148,7 +149,7 @@ body {
                 left: 0vw;
 
                 .right-arrow {
-                    top: 20vh;
+                    top: 10vh;
                     left: 55vw;
                 }
             }
@@ -157,7 +158,7 @@ body {
                 right: -500px;
 
                 .left-arrow {
-                    top: 5vh;
+                    top: 0vh;
                     width: 20vw;
                 }
             }
@@ -252,7 +253,6 @@ body {
         margin: 10px auto;
 
         .contact-links {
-            // height: 80vh;
             width: 100%;
             padding: 20% 10%;
             line-height: 2;
@@ -587,12 +587,13 @@ body {
 
                 .image-overlay {
                     border-radius: $border-radius * 2;
-                    padding: 0 2vw;
+                    height: 100%;
+                    overflow-y: hidden;
 
                     .close-button {
                         right: 5px;
                         top: 5px;
-                        font-size: 1.3rem;
+                        height: 100%;
                     }
 
                     .image-title {
@@ -601,6 +602,11 @@ body {
 
                     .tools {
                         padding: 2vh 0;
+                    }
+
+                    .image-links {
+                        height: 20px;
+                        overflow: hidden;
                     }
                 }
             }

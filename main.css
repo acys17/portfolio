@@ -45,6 +45,7 @@
 }
 
 body {
+  overflow-x: hidden;
   width: 100vw;
   margin: 0;
 }
@@ -209,7 +210,7 @@ body #about .card-container .first-card {
 }
 
 body #about .card-container .first-card .right-arrow {
-  top: 20vh;
+  top: 10vh;
   left: 55vw;
 }
 
@@ -218,7 +219,7 @@ body #about .card-container .second-card {
 }
 
 body #about .card-container .second-card .left-arrow {
-  top: 5vh;
+  top: 0vh;
   width: 20vw;
 }
 
@@ -678,18 +679,23 @@ body footer p {
   }
   body #projects .project-container .project .image-overlay {
     border-radius: 10px;
-    padding: 0 2vw;
+    height: 100%;
+    overflow-y: hidden;
   }
   body #projects .project-container .project .image-overlay .close-button {
     right: 5px;
     top: 5px;
-    font-size: 1.3rem;
+    height: 100%;
   }
   body #projects .project-container .project .image-overlay .image-title {
     padding-bottom: 5vh;
   }
   body #projects .project-container .project .image-overlay .tools {
     padding: 2vh 0;
+  }
+  body #projects .project-container .project .image-overlay .image-links {
+    height: 20px;
+    overflow: hidden;
   }
   body #contact {
     display: -webkit-box;

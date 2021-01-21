@@ -19,12 +19,12 @@ const projects = [
     },
     {
         id: "three",
-        image: "./img/beer.jpg",
-        title: "Punk API",
-        description: "A React App that allows the user to filter through information from a Brewdog beer API",
-        tools: "ReactJS, REST APIs, Postman, CSS3(SASS), HTML5",
-        webpage: "https://punk-api-ba43a.web.app/",
-        github: "https://github.com/acys17/punk-api"
+        image: "./img/todolist.png",
+        title: "To-Do List",
+        description: "A simple JavaScript To-Do List that allows the user to input new items and cross off completed items.",
+        tools: "Javascript, CSS3(SASS), HTML5",
+        webpage: "http://todolist.alice-scott.co.uk/",
+        github: "https://github.com/acys17/todo-list"
     },
     {   
         id: "four",
@@ -46,19 +46,19 @@ const projects = [
     },
     {
         id: "six",
-        image: "./img/coming-soon.png",
-        title: "Hostile Aliens",
-        description: "A JavaScript single-player game - destroy all hostile alien ships!",
-        tools: "Javascript, CSS3(SASS), HTML5",
-        webpage: "",
-        github: ""
+        image: "./img/beer.jpg",
+        title: "Punk API",
+        description: "A React App that allows the user to filter through information from a Brewdog beer API",
+        tools: "ReactJS, REST APIs, Postman, CSS3(SASS), HTML5",
+        webpage: "https://punk-api-ba43a.web.app/",
+        github: "https://github.com/acys17/punk-api"
     },
     {
         id: "seven",
         image: "./img/coming-soon.png",
-        title: "",
-        description: "",
-        tools: "",
+        title: "Hostile Aliens",
+        description: "A JavaScript single-player game - destroy all hostile alien ships!",
+        tools: "Javascript, CSS3(SASS), HTML5",
         webpage: "",
         github: ""
     },
