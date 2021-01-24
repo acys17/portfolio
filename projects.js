@@ -6,7 +6,7 @@ const projects = [
         description: "A Mental Health App monitoring happiness levels over time, built for a client over 4 weeks in a team of 12.",
         tools: "ReactJS, Firebase, Postman, CSS3(SASS), HTML5, Agile, Scrum",
         webpage: "https://happy-app-dbb3b.web.app/",
-        github: ""
+        github: "https://github.com/nology-tech/happy-app"
     },
     {
         id: "two",
