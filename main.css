@@ -291,19 +291,19 @@ body #projects .project-container .project .image-overlay {
 body #projects .project-container .project .image-overlay .close-button {
   position: inherit;
   top: 2vh;
-  right: 5vw;
+  right: 2vw;
   font-size: 1.5rem;
   height: 100%;
   cursor: pointer;
 }
 
 body #projects .project-container .project .image-overlay .image-title {
-  height: 100px;
+  height: 50%;
   padding-top: 2vh;
 }
 
 body #projects .project-container .project .image-overlay .image-description {
-  height: 100px;
+  height: 100%;
   font-size: 0.8rem;
 }
 
@@ -311,7 +311,7 @@ body #projects .project-container .project .image-overlay .tools {
   text-align: center;
   font-size: 0.8rem;
   padding: 0;
-  height: 100px;
+  height: 100%;
 }
 
 body #projects .project-container .project .image-overlay .image-links {
@@ -693,16 +693,11 @@ body footer p {
     height: 100%;
     overflow-y: hidden;
   }
-  body #projects .project-container .project .image-overlay .close-button {
-    right: 5px;
-    top: 5px;
-    height: 100%;
-  }
   body #projects .project-container .project .image-overlay .image-title {
-    padding-bottom: 5vh;
+    padding-top: 5vh;
   }
   body #projects .project-container .project .image-overlay .tools {
-    padding: 2vh 0;
+    padding: 0;
   }
   body #projects .project-container .project .image-overlay .image-links {
     height: 20px;
