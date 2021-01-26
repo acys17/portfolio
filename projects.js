@@ -55,19 +55,19 @@ const projects = [
     },
     {
         id: "seven",
-        image: "./img/coming-soon.png",
-        title: "Hostile Aliens",
-        description: "A JavaScript single-player game - destroy all hostile alien ships!",
-        tools: "Javascript, CSS3(SASS), HTML5",
-        webpage: "",
-        github: ""
+        image: "./img/books.jpg",
+        title: "Angular Bookfinder",
+        description: "A bookfinder app created using Angular and TypeScript that allows the user to search for books through an API",
+        tools: "Angular, Typescript.js, Postman, CSS3(SASS), HTML5",
+        webpage: "https://bookfinder.alice-scott.co.uk/search",
+        github: "https://github.com/acys17/bookfinder"
     },
     {
         id: "eight",
         image: "./img/coming-soon.png",
-        title: "",
-        description: "",
-        tools: "",
+        title: "Hostile Aliens",
+        description: "A JavaScript single-player game - destroy all hostile alien ships!",
+        tools: "Javascript, CSS3(SASS), HTML5",
         webpage: "",
         github: ""
     },
