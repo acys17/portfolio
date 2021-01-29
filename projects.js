@@ -64,12 +64,12 @@ const projects = [
     },
     {
         id: "eight",
-        image: "./img/coming-soon.png",
-        title: "Hostile Aliens",
-        description: "A JavaScript single-player game - destroy all hostile alien ships!",
-        tools: "Javascript, CSS3(SASS), HTML5",
-        webpage: "",
-        github: ""
+        image: "./img/sky.jpg",
+        title: "Weather App",
+        description: "A simple JavaScript app that displays the current weather and local time in searched for cities across the globe",
+        tools: "REST APIs, Postman, Javascript, CSS3(SASS), HTML5",
+        webpage: "http://weatherapp.alice-scott.co.uk/",
+        github: "https://github.com/acys17/weather-app"
     },
     {
         id: "nine",

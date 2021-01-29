@@ -265,13 +265,12 @@ body #projects .project-container .project .image-overlay {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 0 10vw;
+  padding: 0 5vw;
   color: whitesmoke;
   background: rgba(17, 17, 17, 0.8);
   opacity: 0;
   -webkit-transition: opacity 0.8s;
   transition: opacity 0.8s;
-  z-index: 1;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,11 +279,7 @@ body #projects .project-container .project .image-overlay {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
-  line-height: 1rem;
   overflow: hidden;
 }
 
@@ -299,7 +294,7 @@ body #projects .project-container .project .image-overlay .close-button {
 
 body #projects .project-container .project .image-overlay .image-title {
   height: 50%;
-  padding-top: 2vh;
+  padding-top: 4vh;
 }
 
 body #projects .project-container .project .image-overlay .image-description {
@@ -339,7 +334,6 @@ body #contact {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px auto;
 }
 
 body #contact .contact-links {
@@ -421,7 +415,9 @@ body #contact form .button {
   color: whitesmoke;
   width: 50%;
   height: 40px;
-  margin: 10% auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   border-radius: 5px;
   border: 2px solid transparent;
 }
@@ -672,11 +668,10 @@ body footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    opacity: 0.85;
+    opacity: 0.75;
     -webkit-transition: .6s ease;
     transition: .6s ease;
     border-radius: 10px;
-    position: relative;
     cursor: pointer;
   }
   body #projects .project-container .project:hover {
@@ -690,17 +685,20 @@ body footer p {
   }
   body #projects .project-container .project .image-overlay {
     border-radius: 10px;
-    height: 100%;
     overflow-y: hidden;
   }
   body #projects .project-container .project .image-overlay .image-title {
-    padding-top: 5vh;
+    padding-top: 1vh;
   }
   body #projects .project-container .project .image-overlay .tools {
     padding: 0;
+    position: absolute;
+    top: 60%;
   }
   body #projects .project-container .project .image-overlay .image-links {
     height: 20px;
+    position: absolute;
+    top: 80%;
     overflow: hidden;
   }
   body #contact {

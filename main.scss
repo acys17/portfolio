@@ -202,18 +202,15 @@ body {
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    padding: 0 10vw;
+                    padding: 0 5vw;
                     color: $colour-primary;
                     background: $colour-secondary-transparent;
                     opacity: 0;
                     transition: opacity 0.8s;
-                    z-index: 1;
                     border-radius: $border-radius * 4;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
                     text-align: center;
-                    line-height: 1rem;
                     overflow: hidden;
 
                     .close-button {
@@ -227,7 +224,7 @@ body {
 
                     .image-title {
                         height: 50%;
-                        padding-top: 2vh;
+                        padding-top: 4vh;
                     }
 
                     .image-description {
@@ -265,7 +262,6 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10px auto;
 
         .contact-links {
             width: 100%;
@@ -317,7 +313,7 @@ body {
                 color: $colour-primary;
                 width: 50%;
                 height: 40px;
-                margin: 10% auto;
+                align-self: center;
                 border-radius: $border-radius;
                 border: 2px solid transparent;            }
         }
@@ -415,11 +411,9 @@ body {
         }
 
         #projects {
-            // background: url("./img/torn.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            // height: 180vh;
             padding: 20vh 2vw 0vh 2vw;
             
             .project-container {
@@ -556,7 +550,6 @@ body {
     }
 
     #projects {
-        // height: 300vh;
         padding: 10vh 2vw;
         width: inherit;
         background-position: unset;
@@ -583,10 +576,9 @@ body {
             .project {
                 background-color: grey;
                 display: flex;
-                opacity: 0.85;
+                opacity: 0.75;
                 transition: .6s ease;
                 border-radius: $border-radius * 2;
-                position: relative;
                 cursor: pointer;
 
                 &:hover {
@@ -601,25 +593,22 @@ body {
 
                 .image-overlay {
                     border-radius: $border-radius * 2;
-                    height: 100%;
                     overflow-y: hidden;
 
-                    // .close-button {
-                    //     right: 2px;
-                    //     // top: 5px;
-                    //     height: 100%;
-                    // }
-
                     .image-title {
-                        padding-top: 5vh;
+                        padding-top: 1vh;
                     }
 
                     .tools {
                         padding: 0;
+                        position: absolute;
+                        top: 60%;
                     }
 
                     .image-links {
                         height: 20px;
+                        position: absolute;
+                        top: 80%;
                         overflow: hidden;
                     }
                 }
